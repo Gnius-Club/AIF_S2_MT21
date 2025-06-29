@@ -1,24 +1,288 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Misión 21 : Optimización y Pruebas Finales</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Misión 21 : Optimización y Pruebas Finales</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Misión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Realizar una revisión crítica del código generado por IA para encontrar ineficiencias o errores sutiles ('alucinaciones').</li>
+                                        <li>Ejecutar un plan de pruebas de 'Quality Assurance' (QA) para asegurar la robustez del software.</li>
+                                        <li>Desarrollar un pensamiento crítico y escéptico saludable hacia la IA como herramienta.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Contexto del rol de Ingeniero de Calidad (QA).</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Presentación del Desafío:</strong> Introducción al concepto de falibilidad de la IA.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Adquisición conceptual sobre 'alucinaciones' de IA y el proceso de QA.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Ejecución de la revisión de código y del plan de pruebas QA.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Retroalimentación sobre los bugs encontrados y el proceso de resolución.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un proyecto final que ha sido revisado, optimizado y probado para robustez, con al menos un bug lógico o sutil identificado y corregido.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Proyectos completos y sonorizados de la Misión 20.</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Editor de texto para crear la lista de pruebas de QA.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar que Xolo puede identificar y proponer soluciones para bugs lógicos.</li>
+                                                <li>Preparar ejemplos de 'alucinaciones' sutiles de IA (código que funciona pero es ineficiente, nombres de variables confusos, etc.).</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Prepararse para guiar una sesión de pensamiento crítico y pruebas sistemáticas. El rol del facilitador es fomentar el escepticismo saludable y el análisis detallado.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. y Contexto de Misión ⏰ 3 minutos</h2>
+                <p>Establecer un ambiente de trabajo centrado en la calidad y robustez del software.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta el rol de Ingeniero de Calidad (QA).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Ingenieros de Calidad. Su producto está completo. Pero, ¿es robusto? ¿Eficiente? Hoy, asumen el rol más crítico antes de un lanzamiento: el de Quality Assurance (QA). No añadirán nada nuevo. Su misión es revisar, optimizar y tratar de 'romper' su propio juego para encontrar fallos antes de que el jugador los encuentre. La calidad no es un accidente."</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de IA y Perfil ⏰ 2 minutos</h3>
+                            <p>El facilitador da la instrucción explícita a los alumnos para que saluden a Xolo en el chat.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Activen su sesión de trabajo para la Misión 21. Ya conocen el protocolo para iniciar el diálogo con Xolo."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 5 minutos</h2>
+                <p>Clarificar las metas de aprendizaje y presentar la falibilidad de la IA como un concepto a manejar.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Desafío del Día ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador introduce la necesidad de revisar críticamente el código generado por IA.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Hemos confiado mucho en Xolo y otras IAs para generar código. Pero las IAs no son perfectas. A veces 'alucinan' y generan código que funciona, pero que es ineficiente o tiene errores sutiles. Hoy, revisarán críticamente el código que la IA generó para ustedes. Y luego, harán pruebas exhaustivas, intentando todas las combinaciones posibles de acciones."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Objetivo de Aprendizaje (I Can Statement) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje concreto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Al finalizar esta sesión, podrán afirmar con total propiedad: <strong>'Yo puedo revisar críticamente el código generado por IA en busca de 'alucinaciones' y puedo ejecutar un plan de pruebas de QA para asegurar la robustez de mi proyecto.'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM ⏰ 10 minutos</h2>
+                <p>Guiar a los estudiantes para que comprendan el concepto de 'alucinaciones' de IA y cómo crear un plan de QA sistemático.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Diálogo Conceptual con Xolo ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) El facilitador instruye a los estudiantes sobre cómo iniciar su diálogo con su 'Auditor de Código'.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Entramos al A.I. GYM. Para asegurar la calidad, necesitan un plan. Consulten a su Auditor de Código. Díganle a Xolo: <strong>'Xolo, como nuestro Auditor de Código, explícame qué es una 'alucinación' de IA en el código y guíame para crear una lista de pruebas de QA para mi proyecto.'</strong> Él les explicará qué tipo de errores sutiles buscar y les ayudará a formular una lista de pruebas sistemática."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 15 minutos</h2>
+                <p>Supervisar el proceso de revisión de código y la ejecución del plan de pruebas de QA.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Revisión Crítica de Código ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Los equipos revisan sus scripts de Python en busca de ineficiencias o errores sutiles.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Ahora, al Brain Spark. Abran sus scripts. Su primera tarea es la auditoría de código. Lean sus scripts línea por línea con ojo crítico. No busquen solo errores que rompan el juego, sino 'alucinaciones': código que podría ser más eficiente, nombres de variables confusos, lógica repetida. Optimicen donde puedan."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ejecución de QA y Depuración Final ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Los equipos ejecutan su lista de pruebas para encontrar y corregir bugs lógicos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">"Sean sus peores enemigos. Intenten romper su juego. Ejecuten su lista de pruebas de QA. ¿Qué pasa si hacen clic en un orden incorrecto? ¿O muy rápido? Documenten cualquier bug que encuentren y dialoguen con Xolo para resolverlo, pero esta vez con un ojo más crítico sobre sus sugerencias. Verifiquen su lógica."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Moderar una fase de retroalimentación sobre los bugs más interesantes encontrados durante la fase de QA.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 8) El facilitador guía una breve reflexión sobre el bug más interesante encontrado.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Tiempo. Reflexión individual. Piensen en el bug más interesante o inesperado que encontraron durante su sesión de QA. ¿Por qué les parece interesante? ¿Qué les enseñó sobre la robustez del software?"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pair (Intercambio en Parejas) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) En parejas, los estudiantes explican el bug que encontraron y cómo lo resolvieron.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"En parejas. Compartan el hallazgo de su bug más interesante. Expliquen cómo lo encontraron y qué solución implementaron en colaboración con Xolo. El compañero escucha y prepara su feedback."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Share (Retroalimentación Estructurada) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 10) El facilitador provee una estructura para el feedback sobre el proceso de QA.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Para el feedback, usen esta estructura: <strong>1. 'Ese es un buen hallazgo porque demuestra que probaron el caso de...' 2. 'Una pregunta que tengo sobre la solución de Xolo es...' 3. 'Una prueba adicional que se me ocurre para su juego es...'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Síntesis y Cierre ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 11) El facilitador concluye la sesión, declarando los proyectos listos para la presentación.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Hoy han alcanzado el último nivel de la maestría en desarrollo: la garantía de calidad. Han aprendido a no confiar ciegamente en la IA, sino a tratarla como un colaborador talentoso pero falible. Sus proyectos ahora no solo están completos, sino que son robustos. Están oficialmente listos para el Festival de Experiencias Inmersivas. Preparen sus presentaciones."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
